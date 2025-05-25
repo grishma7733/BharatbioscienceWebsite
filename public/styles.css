@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-link {
+    @apply text-gray-600 hover:text-green-600 transition-colors;
+}
+
+.product-card {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105;
+}
+
+#calendar .active-month {
+    @apply bg-green-100 text-green-800;
+}
+
+.testimonial {
+    @apply bg-white p-6 rounded-lg shadow-lg;
+}
+
+.category-card {
+    transition: transform 0.3s ease;
+}
+.category-card:hover {
+    transform: translateY(-5px);
+}
+.category-title {
+    color: #FF6B00;
+}
+.know-more-btn {
+    border: 1px solid #FF6B00;
+    color: #FF6B00;
+    transition: all 0.3s ease;
+}
+.know-more-btn:hover {
+    background-color: #FF6B00;
+    color: white;
+}
