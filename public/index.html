@@ -169,19 +169,102 @@
             padding-left: 1rem;
         }
 
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
 
-            .mobile-menu-btn {
-                display: block;
-            }
+    nav .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-            .mobile-menu.active {
-                display: block;
-            }
-        }
+    .logo-container {
+        justify-content: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    header .grid {
+        grid-template-columns: 1fr;
+    }
+
+    header img {
+        width: 100%;
+        height: auto;
+    }
+
+    #company-goals .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 1.875rem; /* text-3xl */
+    }
+
+    .text-lg {
+        font-size: 1rem;
+    }
+
+    .text-3xl {
+        font-size: 1.5rem;
+    }
+
+    .text-4xl {
+        font-size: 2rem;
+    }
+
+    .text-5xl {
+        font-size: 2.25rem;
+    }
+
+    .rounded-full {
+        width: 40px;
+        height: 60px;
+    }
+
+    .company-name {
+        font-size: 1rem;
+    }
+
+    .dropdown-content {
+        min-width: 100%;
+    }
+
+    .mobile-menu {
+        font-size: 1rem;
+    }
+
+    .mobile-menu a {
+        padding: 0.75rem 1rem;
+    }
+
+    .absolute.-bottom-4.-right-4 {
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
+
+    .absolute .p-4 {
+        padding: 0.75rem;
+    }
+
+    #company-goals, #products {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
     </style>
 </head>
 <body>
