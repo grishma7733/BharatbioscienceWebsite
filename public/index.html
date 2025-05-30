@@ -339,6 +339,20 @@
         padding: 30px 16px;
     }
 
+   
+    #productSlider {
+        flex-direction: column;
+        overflow-x: unset;
+    }
+    #productSlider > div {
+        min-width: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+
+
+
 }
 
     </style>
@@ -631,46 +645,45 @@
 
     <script>
 
-        const mobileMenuBtn = document.getElementById('mobileMenuButton');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const mobileDropdownBtn = document.getElementById('mobileDropdownBtn');
-        const mobileDropdown = document.getElementById('mobileDropdown');
-        // Initialize AOS
-        AOS.init({
-            duration: 800,
-            offset: 100,
-            once: true
-        });
+    const mobileMenuBtn = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileDropdownBtn = document.getElementById('mobileDropdownBtn');
+    const mobileDropdown = document.getElementById('mobileDropdown');
 
-        // Mobile menu toggle
-        document.getElementById('mobileMenu').addEventListener('click', () => {
-            document.querySelector('.mobile-menu').classList.toggle('hidden');
-        });
+    // Initialize AOS
+    AOS.init({
+        duration: 800,
+        offset: 100,
+        once: true
+    });
 
-        // Product data
-        const productData = {
-            starter: {
-                name: 'Bharat Starter',
-                composition: 'Gibberellic acid 0.001% w/w',
-                benefits: ['Enhanced root development', 'Better nutrient uptake', 'Improved germination'],
-                dosage: '20ml per acre'
-            },
-            // Add other product data...
-        };
+    // Product data
+    const productData = {
+        starter: {
+            name: 'Bharat Starter',
+            composition: 'Gibberellic acid 0.001% w/w',
+            benefits: ['Enhanced root development', 'Better nutrient uptake', 'Improved germination'],
+            dosage: '20ml per acre'
+        },
+        // Add other product data...
+    };
 
-        // Show product details
-        function showProductDetails(productId) {
-            const product = productData[productId];
-            // Implement modal or expandable section showing product details
-        }
+    // Show product details
+    function showProductDetails(productId) {
+        const product = productData[productId];
+        // Implement modal or expandable section showing product details
+    }
 
-        mobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
+    // Mobile menu toggle
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
 
-  mobileDropdownBtn.addEventListener('click', () => {
-    mobileDropdown.classList.toggle('hidden');
-  });
+    // Mobile dropdown toggle
+    mobileDropdownBtn.addEventListener('click', () => {
+        mobileDropdown.classList.toggle('hidden');
+    });
+
 
         
     </script>
