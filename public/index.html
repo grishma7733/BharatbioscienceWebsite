@@ -328,18 +328,19 @@
 <body>
 <!-- Navigation -->
 <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-md z-50">
-  <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-    <div class="flex items-center gap-2">
-      <img src="Logo-cropped.svg" alt="Logo" class="rounded-full w-10 h-10">
-      <span class="text-xl font-bold text-green-700">Bharat Bio Science</span>
+  <div class="max-w-screen-xl mx-auto px-4 py-3 flex justify-between items-center overflow-hidden">
+    <!-- Logo + Brand -->
+    <div class="flex items-center gap-2 min-w-0">
+      <img src="Logo-cropped.svg" alt="Logo" class="rounded-full w-10 h-10 shrink-0" />
+      <span class="text-xl font-bold text-green-700 truncate">Bharat Bio Science</span>
     </div>
-    
+
     <!-- Desktop Menu -->
     <div class="hidden md:flex gap-6 items-center">
       <a href="index.html" class="nav-link">HOME</a>
       <div class="relative group">
         <a href="#" class="nav-link">PRODUCTS</a>
-        <div class="absolute hidden group-hover:block bg-white shadow-md mt-2 py-2 z-50">
+        <div class="absolute hidden group-hover:block bg-white shadow-md mt-2 py-2 z-50 whitespace-nowrap">
           <a href="insecticide.html" class="block px-4 py-2 hover:bg-green-50">Insecticides</a>
           <a href="fungiside.html" class="block px-4 py-2 hover:bg-green-50">Fungicides</a>
           <a href="PGR.html" class="block px-4 py-2 hover:bg-green-50">Plant Growth Regulators</a>
@@ -362,17 +363,16 @@
 <!-- Mobile Menu -->
 <div id="mobileMenu" class="hidden fixed top-16 left-0 w-full bg-white shadow-lg z-40 md:hidden">
   <a href="index.html" class="block px-4 py-2 hover:bg-green-50">HOME</a>
-  <div>
-    <button id="mobileDropdownBtn" class="w-full text-left px-4 py-2 hover:bg-green-50">PRODUCTS</button>
-    <div id="mobileDropdown" class="hidden ml-4">
-      <a href="insecticide.html" class="block px-4 py-2 hover:bg-green-50">Insecticides</a>
-      <a href="fungiside.html" class="block px-4 py-2 hover:bg-green-50">Fungicides</a>
-      <a href="PGR.html" class="block px-4 py-2 hover:bg-green-50">Plant Growth Regulators</a>
-      <a href="herbicides.html" class="block px-4 py-2 hover:bg-green-50">Herbicides</a>
-    </div>
+  <button id="mobileDropdownBtn" class="w-full text-left px-4 py-2 hover:bg-green-50">PRODUCTS</button>
+  <div id="mobileDropdown" class="hidden">
+    <a href="insecticide.html" class="block px-6 py-2 hover:bg-green-50">Insecticides</a>
+    <a href="fungiside.html" class="block px-6 py-2 hover:bg-green-50">Fungicides</a>
+    <a href="PGR.html" class="block px-6 py-2 hover:bg-green-50">Plant Growth Regulators</a>
+    <a href="herbicides.html" class="block px-6 py-2 hover:bg-green-50">Herbicides</a>
   </div>
   <a href="#contact" class="block px-4 py-2 hover:bg-green-50">CONTACT US</a>
 </div>
+
 
 
     <header class="pt-16 bg-gradient-to-b from-green-800 to-green-600">
