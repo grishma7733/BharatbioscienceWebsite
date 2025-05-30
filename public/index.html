@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bharat Bio Science - Agricultural Solutions</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <link href="./output.css" rel="stylesheet">
+    <!-- <link href="./output.css" rel="stylesheet"> -->
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
@@ -257,6 +257,24 @@
 }
 
 @media screen and (max-width: 640px) {
+    
+    nav .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-container {
+        justify-content: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
     h1 {
         font-size: 1.875rem; /* text-3xl */
     }
@@ -314,7 +332,7 @@
     }
 
     .product-card {
-        flex: 1 1 100%;
+        flex: 1 1 50%;
     }
 
     #products .products-container {
