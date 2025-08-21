@@ -87,8 +87,8 @@ This project was developed as a **freelance solution for Bharat Bio Science (Agr
 
 ## 👨‍💻 Author  
 **Your Name**  
-- 💼 [LinkedIn](https://linkedin.com/in/your-profile)  
-- 🐙 [GitHub](https://github.com/your-username)  
+- 💼 [LinkedIn](https://linkedin.com/in/grishma-naik-114985226)  
+- 🐙 [GitHub](https://github.com/grishma7733)  
 
 ---
 
